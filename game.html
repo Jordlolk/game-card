@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <header>
+        <h1>Now it`s time to iniciate the GAME!</h1>
+    </header>
+    <main>
+        <span>Qual o nome do coração de P ?</span>
+        <section class="sentences" data-answer="answers">
+            <div data-card="cards" class="off">
+                <input data-inputs="inputs" class="checkbox" type="checkbox" >
+                <span>Orgão P</span>
+                <img src="img/cardQuest0.jpg" alt="">
+            </div>
+            <div data-card="cards" class="off">
+                <input data-inputs="inputs" class="checkbox" type="checkbox" >
+                <span>Ergo</span>
+                <img src="img/cardQuest1.jpg" alt="">
+            </div>
+            <div data-card="cards" class="off">
+                <input data-inputs="inputs" class="checkbox" type="checkbox" >
+                <span>Titéres</span>
+                <img src="img/cardQuest2.jpg" alt="">
+            </div>
+        </section>
+
+        <span>Quem criou o Surto de titéres?</span>
+        <section class="sentences" data-answer="answers">
+            <div data-card="cards1" class="off">
+                <input data-inputs="inputs" class="checkbox" type="checkbox" >
+                <span>Geppeto</span>
+                <img src="img/cardQuest3.jpg" alt="">
+            </div>
+            <div data-card="cards1" class="off">
+                <input data-inputs="inputs" class="checkbox" type="checkbox" >
+                <span>Vegini</span>
+                <img src="img/cardQuest4.jpg" alt="">
+            </div>
+            <div data-card="cards1" class="off">
+                <input data-inputs="inputs" class="checkbox" type="checkbox" >
+                <span>P</span>
+                <img src="img/cardQuest5.jpg" alt="">
+            </div>
+        </section>
+
+        <span>O que os robos possuiam em comum ?</span>
+        <section class="sentences" data-answer="answers">
+            <div data-card="cards2" class="off">
+                <input data-inputs="inputs" class="checkbox" type="checkbox" >
+                <span>Livro arbítrio</span>
+                <img src="img/cardQuest6.jpg" alt="">
+            </div>
+            <div data-card="cards2" class="off">
+                <input data-inputs="inputs" class="checkbox" type="checkbox" >
+                <span>Insanidade</span>
+                <img src="img/cardQuest7.jpg" alt="">
+            </div>
+            <div data-card="cards2" class="off">
+                <input data-inputs="inputs" class="checkbox" type="checkbox" >
+                <span>Hirarquia</span>
+                <img src="img/cardQuest8.jpg" alt="">
+            </div>
+        </section>
+        <div>
+            <h1 id="result"></h1>
+            <h1 id="resultNegated"></h1>
+        </div>
+        <button disabled id="verify">VERIFICAR</button>
+
+    </main>
+    <script src="javaScript.js"></script>
+</body>
+</html>
