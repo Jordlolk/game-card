@@ -110,3 +110,20 @@ main p {
   transform: rotate(45deg);
   margin: 1px 7px;
 }
+.verify{
+  margin-top: -8px;
+  padding: 10px;
+  background-color: var(--black);
+  border: var(--white) 2px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--white);
+}
+.onverify{
+  border-color: var(--borderEffects);
+  color: var(--red);
+}
+.disabled{
+    cursor: default;
+    filter: blur(1px);
+}

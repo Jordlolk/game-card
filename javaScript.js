@@ -4,6 +4,8 @@ cards = document.querySelectorAll('.off'),
 checkboxes = document.querySelectorAll('[data-inputs="inputs" ]')
 let spanText = null
 
+buttonVerify.classList.add("disabled")
+
 const showResult = (truePoints , count) => {
   buttonVerify.addEventListener('click' , () => {
         const result = document.getElementById('result'),
@@ -17,11 +19,14 @@ const abilityButton = (marked , count) => {
   let truePoints = marked.filter((card) => card === "correct")
   if(marked.length === 3){
     buttonVerify.disabled = false;
+    buttonVerify.addEventListener("mouseenter" , () => {buttonVerify.classList.add("onverify")})
+    buttonVerify.classList.remove("disabled")
     showResult(truePoints , count)
   } 
 }
 const  scannerResult = (cards) => {
   let marked = [];
+  
   let count = 0;
   const correctAnswers = ["Orgão P" , "Geppeto" , "Livro arbítrio"]
   const hasChecked = (cards) => {
