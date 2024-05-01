@@ -1,15 +1,15 @@
-:root{
-  --blue : rgb(0, 81, 255);
-  --red : rgb(230, 21, 21);
+:root {
+  --blue: rgb(0, 81, 255);
+  --red: rgb(230, 21, 21);
   --black: black;
-  --gray : rgb(36, 36, 36) ;
+  --gray: rgb(36, 36, 36);
   --warning: rgb(255, 251, 0);
   --white: white;
   --borderEffects: rgb(255, 166, 0);
-  --effects : yellow;
+  --effects: yellow;
 }
-main{
-  background-image: url(https://www.psu.com/wp/wp-content/uploads/2023/02/Lies-Of-P-PS5-Wallpapers-05.jpg);
+main {
+  background-image: url(img/wallpaper02.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,130 +18,141 @@ main{
   justify-content: center;
 }
 
-@media screen and (max-width : 740px){
-    main{
-      display: flex;
-      padding-top: 2rem;
-      flex-direction: column;
-      align-items: center;
-    }
-    .banner{
-      background-image: url(https://p2.trrsf.com/image/fget/cf/1200/1200/middle/images.terra.com/2023/09/19/lies-of-p-capa-ure1w0wgncqb.jpg);
-      padding: 40px;
-      background-position: top;
-    }
-    .banner h2{
-      font-size: 4rem;
-    }
-    .banner p{
-      margin-top: 4rem;
-      font-size: 2rem;
-    }
-    p,span,li,a,button{
-      font-size: 1.2rem;
-    }
-    .quizPuzzle{
-      display: flex;
-      flex-direction: column;
-    }
-    .quizPuzzle p{
-      width: 80%;
-      text-align: justify;
-    }
-    span{
-      text-align: center;
-    }
-    .linksYoutube{
-      flex-direction: column;
-    }
-
+@media screen and (max-width: 740px) {
+  main {
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: column;
+    align-items: center;
   }
-  @media screen and (min-width : 720px){
-    main{
-      display: flex;
-      padding-top: 4rem;
-      flex-direction: column;
-      align-items: center;
-    }
-    .banner{
-      background-image: url(https://wallpapercg.com/download/pinocchio-3840x2160-16633.jpg);
-      padding: 80px;
-      background-position: center;
-    }
-    .banner p{
-      font-size: 2rem;
-      margin-top: 8rem;
-    }
-    .banner h2{
-      font-size: 8rem;
-    }
-    .details li{
-      color: var(--white);
-    }
-    .quizPuzzle{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .quizPuzzle p{
-      text-align: center;
-      padding: 20px;
-    }
-    p,span,li,a,button{
-      font-size: 1.4rem;
-    }
-
+  .banner {
+    background-image: url(https://p2.trrsf.com/image/fget/cf/1200/1200/middle/images.terra.com/2023/09/19/lies-of-p-capa-ure1w0wgncqb.jpg);
+    padding: 40px;
+    background-position: top;
   }
-.welcome h1{
-  background-color: var(--black);
+  .banner h2 {
+    font-size: 4rem;
+  }
+  .banner p {
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+  p,
+  span,
+  li,
+  a,
+  button {
+    font-size: 1.2rem;
+  }
+  .quizPuzzle {
+    display: flex;
+    flex-direction: column;
+  }
+  .quizPuzzle p {
+    width: 80%;
+    text-align: justify;
+  }
+  span {
+    text-align: center;
+  }
+  .linksYoutube {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 720px) {
+  main {
+    display: flex;
+    padding-top: 4rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner {
+    background-image: url(img/wallpaper01.png);
+    padding: 80px;
+    background-position: center;
+  }
+  .banner p {
+    font-size: 2rem;
+    margin-top: 8rem;
+  }
+  .banner h2 {
+    font-size: 8rem;
+  }
+  .details li {
+    width: fit-content;
+    margin: 30px;
+    background-color: rgb(0, 0, 0);
+    border: var(--blue) 4px solid;
+    border-radius: 50px;
+    color: var(--white);
+  }
+  .quizPuzzle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .quizPuzzle p {
+    text-align: center;
+    padding: 20px;
+  }
+  p,
+  span,
+  li,
+  a,
+  button {
+    font-size: 1.4rem;
+  }
+}
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.banner h1 {
   padding: 10px;
 }
-.banner{
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.banner h2{
+.banner h2 {
   font-style: italic;
 }
-.banner p{
+.banner p {
   color: var(--white);
   text-align: center;
 }
-.details li{
+.details li {
   font-size: 1.8rem;
   padding: 10px;
   list-style: none;
 }
-.details li::before{
-   content: '\2022';
-   color: red;
-   margin-right: 1rem;
+.details li::before {
+  content: "\2022";
+  color: red;
+  margin-right: 1rem;
 }
-.banner h3,h4{
+.banner h3,
+h4 {
   font-size: 1rem;
   color: var(--white);
 }
-.quizPuzzle{
+.quizPuzzle {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.quizPuzzle p{
+.quizPuzzle p {
   line-height: 1.8rem;
   line-break: anywhere;
 }
-.buttons{
+.buttons {
   list-style: none;
   display: flex;
   gap: 2rem;
   margin: 20px;
 }
-.linksYoutube{
+.linksYoutube {
   list-style: none;
   display: flex;
   gap: 2rem;
@@ -149,6 +160,6 @@ main{
   align-items: center;
 }
 
-.linksYoutube li a{
+.linksYoutube li a {
   text-decoration: none;
 }

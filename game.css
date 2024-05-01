@@ -12,32 +12,21 @@ span {
   font-size: 1.4rem;
 }
 /* JS effects */
-[data-card="cards"] , [data-card="cards1"] ,  [data-card="cards2"]{
+[data-card="cards"],
+[data-card="cards1"],
+[data-card="cards2"] {
   cursor: pointer;
 }
-.off{
-  border:inset var(--white) 4px;
+.off {
+  border: inset var(--white) 4px;
 }
-.on{
+.on {
   cursor: pointer;
   border: inset var(--borderEffects) 4px;
 }
+
 /* End JS effects */
-/* @media screen and (max-width: 600px) {
-  .sentences{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 640px) {
-  .sentences{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-} */
+
 header {
   padding: 10px;
 }
@@ -46,27 +35,19 @@ main {
   flex-direction: column;
   align-items: center;
 }
-/* main button {
-  background-color: var(--black);
-  border: solid 2px var(--white);
-  padding: 18px;
-  border-radius: 10%;
-  color: var(--white);
-}
-main button:hover {
-  border-color: var(--borderEffects);
-  color: var(--red);
-} */
+
 main p {
   color: var(--borderEffects);
   font-size: 1.8rem;
 }
+
 .sentences {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
 }
+
 .sentences div {
   position: relative;
   width: 400px;
@@ -84,7 +65,8 @@ main p {
   border-radius: 10%;
   height: 12rem;
 }
-.checkbox{
+
+.checkbox {
   position: absolute;
   appearance: none;
   right: 20px;
@@ -96,10 +78,12 @@ main p {
   border: 2.4px solid var(--white);
   transition: ease-in-out 200ms;
 }
+
 .checkbox:checked {
   background-color: var(--black);
   border-color: var(--borderEffects);
 }
+
 .checkbox:checked::after {
   content: "";
   display: block;
@@ -110,8 +94,8 @@ main p {
   transform: rotate(45deg);
   margin: 1px 7px;
 }
-.verify{
-  margin-top: -8px;
+.verify {
+  margin: 28px;
   padding: 10px;
   background-color: var(--black);
   border: var(--white) 2px solid;
@@ -119,11 +103,11 @@ main p {
   cursor: pointer;
   color: var(--white);
 }
-.onverify{
+.onverify {
   border-color: var(--borderEffects);
   color: var(--red);
 }
-.disabled{
-    cursor: default;
-    filter: blur(1px);
+.disabled {
+  cursor: default;
+  filter: blur(1px);
 }

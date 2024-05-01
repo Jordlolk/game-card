@@ -8,11 +8,8 @@ buttonVerify.classList.add("disabled")
 
 const showResult = (truePoints , count) => {
   buttonVerify.addEventListener('click' , () => {
-        const result = document.getElementById('result'),
-        reusltNegative = document.getElementById('resultNegated');
-
-        result.innerHTML = truePoints.length === 3 ? `Você acertou todas as respostas!` : `Você acertou ${truePoints.length} respotas!` 
-        reusltNegative.innerHTML =  count === 3 ? `Você errou todas as respotas...` : `Errou um total de ${count} respotas!` 
+      let res = window.confirm(`Você acertou ${truePoints.length} e errou ${count}`)
+      res ? window.location.reload() : null
       })
 }
 const abilityButton = (marked , count) => {
