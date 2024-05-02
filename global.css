@@ -1,43 +1,44 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
 }
-p , h2 , h1 , a{
-  color:var(--white);
+p,
+h2,
+h1,
+a {
+  color: var(--white);
   text-shadow: var(--black) 2px 1px 1px;
 }
-span{
+span {
   color: var(--warning);
   text-shadow: var(--black) 2px 1px 1px;
 }
-body{
+body {
   background-color: var(--black);
 }
-:root{
-  --blue : rgb(0, 81, 255);
-  --red : rgb(230, 21, 21);
+:root {
+  --blue: rgb(0, 81, 255);
+  --red: rgb(230, 21, 21);
   --black: black;
-  --gray : rgb(36, 36, 36) ;
+  --gray: rgb(36, 36, 36);
   --warning: rgb(255, 251, 0);
   --white: white;
   --borderEffects: rgb(255, 166, 0);
-  --effects : yellow;
+  --effects: yellow;
 }
-.linksWiki{
+.linksWiki {
   cursor: pointer;
   text-shadow: none;
   text-decoration: underline var(--blue);
 }
-.linksWiki:hover{
+.linksWiki:hover {
   color: var(--blue);
 }
-.buttons{
-  padding: 20px 0px 20px;
-}
-.buttons button{
+
+.buttons button {
   color: var(--white);
   text-transform: uppercase;
   padding: 8px;
@@ -46,26 +47,25 @@ body{
   background-color: var(--black);
   transition: ease-in-out 200ms;
 }
-.buttons button:hover{
-    border: var(--borderEffects) solid 2px;
-    color: var(--red);
+.buttons button:hover {
+  border: var(--borderEffects) solid 2px;
+  color: var(--red);
 }
-.linksYoutube li{
+.linksYoutube li {
   color: var(--white);
   padding: 12px;
-  border: solid 2px ;
+  border: solid 2px;
   border-radius: 10%;
   background-color: var(--black);
 }
-.linksYoutube li a{
+.linksYoutube li a {
   text-decoration: none;
   color: var(--white);
   transition: ease-in-out 100ms;
 }
-.linksYoutube li:hover{
+.linksYoutube li:hover {
   color: var(--red);
   border: solid 2px var(--borderEffects);
-
 }
 .linksYoutube li:hover a {
   color: var(--red);
